@@ -117,12 +117,12 @@ template<class T> class LinkedList {
 	int getSize() {return size;}
 
 	T getHead() {
-		if (size > 0) throw std::logic_error("List is empty!");
+		if (size <= 0) throw std::logic_error("List is empty!");
 		return head->getData();
 	}
 
 	T getTail() {
-		if (size > 0) throw std::logic_error("List is empty!");
+		if (size <= 0) throw std::logic_error("List is empty!");
 		return tail->getData();
 	}
 
