@@ -7,9 +7,9 @@ template<typename T> class LinkedList {
 	unsigned int size;
 	public:
 	LinkedList() {
-		head = nullptr;
-		tail = nullptr;
-		size = 0;
+	    head = nullptr;
+	    tail = nullptr;
+	    size = 0;
 	}
 	~LinkedList() {}
 	
