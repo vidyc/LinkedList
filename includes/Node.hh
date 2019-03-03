@@ -6,7 +6,7 @@ template<class T> class Node {
 	
 	public:
 	Node() {
-		next = nullptr;
+	    next = nullptr;
 	}
 
 	~Node() {
@@ -14,22 +14,22 @@ template<class T> class Node {
 	}
 	
 	void print() {	
-		std::cout << data << std::endl;
+	    std::cout << data << std::endl;
 	}
 	
 	void setData(T data) {
-		this->data = data;
+	    this->data = data;
 	}
 	
 	void setNext(Node<T> *next) {
-		this->next = next;
+	    this->next = next;
 	}
 	
 	T getData() {
-		return data;
+	    return data;
 	}
 	
 	Node<T>* getNext() {
-		return next;
+	    return next;
 	}	
 };
