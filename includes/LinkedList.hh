@@ -137,27 +137,4 @@ template<class T> class LinkedList {
 		}
 		else throw std::invalid_argument("Invalid index!");
 	}
-	//metodos sofisticados
-	void swap(Node<T> *n1, Node<T> *n2) {
-		Node<T> *temp = n1;
-		n1 = n2;
-		n2 = n1;
-	}
-
-	void sort() {
-		sort(head);
-	}
-
-	private:
-	void sort(Node<T> *head) {
-		if (head->getNext() != nullptr) {
-			Node<T> *temp = head->getNext();
-			sort(temp);
-			if (temp->getData() < head->getData()) {
-				swap(temp, head);
-				sort(head);
-			}
-		}
-	}
-
 };
